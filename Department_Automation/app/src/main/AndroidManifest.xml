@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.department_automation">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Effisync"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Department_Automation"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".ATTENDANCE"
+            android:exported="false" />
+        <activity
+            android:name=".student_view2"
+            android:exported="false" />
+        <activity
+            android:name=".home"
+            android:exported="false"
+            android:label="@string/title_activity_home"
+            android:theme="@style/Theme.Department_Automation.NoActionBar" />
+        <activity
+            android:name=".ADD_MATERIAL"
+            android:exported="false" />
+        <activity
+            android:name=".ADD_MARK"
+            android:exported="false" />
+        <activity
+            android:name=".custom_view_student_addmark"
+            android:exported="false" />
+        <activity
+            android:name=".StudentListAddMark1"
+            android:exported="false" />
+        <activity
+            android:name=".Custom_View_Student_List_Add_Mark"
+            android:exported="false" />
+
+        <uses-library android:name="org.apache.http.legacy" />
+
+        <activity
+            android:name=".custom_view_student"
+            android:exported="false" />
+        <activity
+            android:name=".view_student"
+            android:exported="false" />
+        <activity
+            android:name=".ADD_STUDENT"
+            android:exported="false" />
+        <activity
+            android:name=".PROFILE"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

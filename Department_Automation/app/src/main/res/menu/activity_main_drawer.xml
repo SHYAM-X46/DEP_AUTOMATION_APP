@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/homebutton"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/user"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_viewstudent"
+            android:icon="@drawable/group"
+            android:title="View Student" />
+        <item
+            android:id="@+id/nav_addstudent"
+            android:icon="@drawable/incorporation"
+            android:title="Add Student" />
+        <item
+            android:id="@+id/nav_subject"
+            android:icon="@drawable/library"
+            android:title="TriTrack" />
+        <item
+            android:id="@+id/nav_LOGOUT"
+            android:icon="@drawable/export"
+            android:title="Log Out" />
+<!--        <item-->
+<!--            android:id="@+id/nav_custom_view_student_addmark"-->
+<!--            android:icon="@drawable/ic_baseline_create_24"-->
+<!--            android:title="Add mark" />-->
+<!--        <item-->
+<!--            android:id="@+id/nav_material"-->
+<!--            android:icon="@drawable/ic_baseline_folder_special_24"-->
+<!--            android:title="Add material" />-->
+    </group>
+</menu>
